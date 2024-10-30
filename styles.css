@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f17;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c1c24;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+    padding: 0%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #78c1ff;
+    display: inline;
+    font-weight: normal;
+    margin-top: 1cm; /* رفع النص بمقدار 1 سم */
+}
+
+nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: rgba(5, 148, 148, 0.404);
+    color: black;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #eaeaea;
+}
+
+p {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #00aaff;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+    background-color: #00aa;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 0.9em;
+    background-color: #1c1c24;
+    color: #cccccc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav button {
+        margin: 5px 0;
+    }
+
+    .dashboard-button {
+        width: 80%;
+        font-size: 16px;
+    }
+}
